@@ -11,17 +11,17 @@ from diagrams.onprem.database import PostgreSQL
 from diagrams.custom import Custom
 
 graphql_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/200px-GraphQL_Logo.svg.png"
-graphql_icon = "graphql.png"
+graphql_icon = "assets/graphql.png"
 urlretrieve(graphql_url, graphql_icon)
 
 orva_url = "https://avatars2.githubusercontent.com/u/53947571?s=200&v=4"
-orva_icon = "pr-orva.png"
+orva_icon = "assets/pr-orva.png"
 
 phone_url = "https://cdn0.iconfinder.com/data/icons/devices-technologies/100/cellulare1-512.png"
-phone_icon = "phone.png"
+phone_icon = "assets/phone.png"
 
 voice_url = "https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_voice_48px-512.png"
-voice_icon = "voice.png"
+voice_icon = "assets/voice.png"
 
 urlretrieve(orva_url, orva_icon)
 urlretrieve(phone_url, phone_icon)
@@ -32,7 +32,7 @@ graph_attr = {
     "bgcolor": "transparent"
 }
 
-with Diagram(name="Orva Architecture Overview", show=True, graph_attr=graph_attr):
+with Diagram(name="Orva Architecture Overview", show=False, graph_attr=graph_attr):
     core = Custom("core", orva_icon)
 
     with Cluster("Client Devices"):
