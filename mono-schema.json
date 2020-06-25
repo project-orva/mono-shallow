@@ -32,6 +32,11 @@
             "url": "https://github.com/project-orva/core-web"
         },
         {
+            "key": "repository-ingress",
+            "shallow": false,
+            "url": "https://github.com/project-orva/repository-ingress"
+        },
+        {
             "key": "shallow",
             "shallow": true,
             "url": "https://github.com/project-orva/mono-shallow"
@@ -48,11 +53,14 @@
         {
             "services": [
                 "skill",
-                "speech"
+                "speech",
+                "repository-ingress"
             ]
         },
         {
-            "sdk": [ "node-sdk" ]
+            "sdk": [
+                "node-sdk"
+            ]
         }
     ]
 }
