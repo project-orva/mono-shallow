@@ -45,9 +45,8 @@ with Diagram(name="Orva Architecture Overview", show=False, graph_attr=graph_att
     with Cluster("Auth"):
         auth = EC2("Auth")
 
+    resository_ingress = EC2("Repository Ingress")
     with Cluster("Database"):
-        resository_ingress = EC2("Repository Ingress")
-
         resository_ingress >> [
             RDS("Profile"),
             RDS("Account"),
@@ -75,6 +74,6 @@ with Diagram(name="Orva Architecture Overview", show=False, graph_attr=graph_att
 
         web >> Custom("query service", graphql_icon) >> [
             core,
-            resository_ingress,
         ]
+        web >> devices
         web >> auth
