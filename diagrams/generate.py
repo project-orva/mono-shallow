@@ -42,19 +42,27 @@ with Diagram(name="Orva Architecture Overview", show=False, graph_attr=graph_att
         ]
         devices >> core
 
+    with Cluster("Auth"):
+        auth = EC2("Auth")
+
     with Cluster("Database"):
-        profile_db = RDS("Profile")
-        account = RDS("Account")
+        resository_ingress = EC2("Repository Ingress")
+
+        resository_ingress >> [
+            RDS("Profile"),
+            RDS("Account"),
+            auth,
+        ]
         core >> [
-            account,
+            resository_ingress,
         ]
 
     with Cluster("Skills"):
         sk_1 = EC2("Skill 1")
         skills = [
             sk_1,
-        ] >> profile_db
-        
+        ] >> resository_ingress
+
     with Cluster("gRPC Services"):
         skill = EC2("Skill Router")
         core >> [
@@ -62,17 +70,11 @@ with Diagram(name="Orva Architecture Overview", show=False, graph_attr=graph_att
         ]
         core >> skill >> sk_1
 
-    with Cluster("Auth"):
-        auth = EC2("Auth")
-
-        auth >> account
-
     with Cluster("Web"):
         web = React("web app")
-        
+
         web >> Custom("query service", graphql_icon) >> [
             core,
-            profile_db
+            resository_ingress,
         ]
         web >> auth
-    
