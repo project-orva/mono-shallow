@@ -9,7 +9,7 @@
 > Note: this project is still a big work in progress.
 
 ### What is project orva? 
-Project orva is a "digital assistant" aiming to solve some of the issues found in modern digital assistance platforms. (This project is still a WIP)
+Project orva is a "digital assistant" aiming to solve some of the issues found in modern digital assistance platforms.
 
 ### Some of the problems we are attempting to solve
 #### Open-sourcing "digital assistance"
