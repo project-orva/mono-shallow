@@ -9,7 +9,7 @@
 > Note: this project is still a big work in progress.
 
 ### What is project orva? 
-Project orva is a "digital assistant" aiming to solve some of the issues found in modern digital assistance platforms.
+Project orva is a "digital assistant" aiming to solve some of the issues found in modern digital assistance platforms. (This project is still a WIP)
 
 ### Some of the problems we are attempting to solve
 #### Open-sourcing "digital assistance"
@@ -39,3 +39,12 @@ We are using gRPC for both registering skills to the service and making predicti
 
 #### Speech Service
 Speech service handles the generation of dynamic speech in scenarios where skills are unavailable or if the predictability of a skill is below some specified threshold.  
+
+
+### Contribution
+Feel free to contribute by opening a Pull Request or an issue thread.
+
+Contributions are always appreciated! 
+
+### License
+This project does not currently have a license
