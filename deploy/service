@@ -1,0 +1,25 @@
+[Unit]
+Description=Easy mono manager for project orva
+ConditionPathExists=/home/ross/deploy/easy-mono/main
+After=network.target
+
+[Service]
+Type=simple
+LimitNOFILE=1024
+
+Restart=on-failure
+RestartSec=10
+startLimitIntervalSec=60
+Environment=""
+
+WorkingDirectory=/home/ross/deploy/easy-mono
+ExecStart=/home/ross/deploy/easy-mono/main
+
+PermissionsStartOnly=true
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=orva-mono-manager
+
+[Install]
+WantedBy=multi-user.target
+                    
