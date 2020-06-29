@@ -39,3 +39,12 @@ We are using gRPC for both registering skills to the service and making predicti
 
 #### Speech Service
 Speech service handles the generation of dynamic speech in scenarios where skills are unavailable or if the predictability of a skill is below some specified threshold.  
+
+
+### Contribution
+Feel free to contribute by opening a Pull Request or an issue thread.
+
+Contributions are always appreciated! 
+
+### License
+This project does not currently have a license
