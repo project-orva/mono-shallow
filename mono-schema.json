@@ -4,42 +4,42 @@
         {
             "key": "core",
             "shallow": false,
-            "url": "https://github.com/project-orva/orva"
+            "url": "git@github.com:project-orva/orva.git"
         },
         {
             "key": "node-sdk",
             "shallow": false,
-            "url": "https://github.com/project-orva/sdk"
+            "url": "git@github.com:project-orva/sdk.git"
         },
         {
             "key": "skill",
             "shallow": false,
-            "url": "http://github.com/project-orva/skill-service"
+            "url": "git@github.com:project-orva/skill-service.git"
         },
         {
             "key": "app",
             "shallow": false,
-            "url": "http://github.com/project-orva/core-webapp"
+            "url": "git@github.com:project-orva/core-webapp.git"
         },
         {
             "key": "speech",
-            "shallow": false,
-            "url": "https://github.com/project-orva/speech-service"
+            "shallow": false,   
+            "url": "git@github.com:project-orva/speech-service.git"
         },
         {
             "key": "queries-service",
             "shallow": false,
-            "url": "https://github.com/project-orva/core-web"
+            "url": "git@github.com:project-orva/core-web.git"
         },
         {
             "key": "repository-ingress",
             "shallow": false,
-            "url": "https://github.com/project-orva/repository-ingress"
+            "url": "git@github.com:project-orva/repository-ingress.git"
         },
         {
             "key": "shallow",
             "shallow": true,
-            "url": "https://github.com/project-orva/mono-shallow"
+            "url": "git@github.com:project-orva/mono-shallow.git"
         }
     ],
     "schema": [
