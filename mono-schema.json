@@ -40,6 +40,11 @@
             "key": "shallow",
             "shallow": true,
             "url": "git@github.com:project-orva/mono-shallow.git"
+        },
+        {
+            "key": "auth",
+            "shallow": false,
+            "url": "git@github.com:project-orva/auth.git"
         }
     ],
     "schema": [
@@ -50,6 +55,7 @@
                 "app"
             ]
         },
+        "auth",
         {
             "services": [
                 "skill",
